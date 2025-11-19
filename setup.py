@@ -1,0 +1,28 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="rag-chatbot",
+    version="0.1.0",
+    description="A full-stack AI-powered chatbot that allows users to upload PDF documents and ask questions about their content using Retrieval-Augmented Generation (RAG)",
+    author="Your Name",
+    author_email="you@example.com",
+    packages=find_packages(),
+    install_requires=[
+        "chromadb>=1.3.5",
+        "email-validator>=2.3.0",
+        "fastapi>=0.121.2",
+        "langchain>=0.3.26",
+        "langchain-chroma>=0.2.6",
+        "langchain-community>=0.3.27",
+        "langchain-google-genai>=0.1.12",
+        "google-generativeai>=0.7.2",
+        "pydantic>=2.11.7",
+        "pyjwt>=2.10.1",
+        "pypdf2>=3.0.1",
+        "python-dotenv>=1.1.1",
+        "python-multipart>=0.0.20",
+        "supabase>=2.24.0",
+        "uvicorn>=0.38.0",
+    ],
+    python_requires=">=3.11",
+)
